@@ -1,0 +1,146 @@
+*{
+  box-sizing:border-box
+}
+body{
+  margin:0;
+  min-height:100vh;
+  background:#eef1ec;
+  color:#28342d;
+  font:15px/1.5 Arial,sans-serif;
+  display:flex;
+  justify-content:center;
+  padding:8vh 20px
+}
+.app{
+  width:min(100%,580px);
+  background:#fbfcf9;
+  padding:45px 45px 25px;
+  box-shadow:0 16px 50px #28342d12;
+  border:1px solid #e3e7df
+}
+.eyebrow{
+  font-size:10px;
+  letter-spacing:.15em;
+  color:#879286;
+  font-weight:bold
+}
+h1{
+  font:500 44px Georgia,serif;
+  margin:15px 0 2px
+}
+h1 span{
+  color:#c87551
+}
+.sub{
+  color:#858d83;
+  font-size:13px
+}
+form{
+  display:flex;
+  margin-top:30px;
+  border-bottom:1px solid #cbd2c8
+}
+input{
+  border:0;
+  outline:0;
+  background:transparent;
+  padding:14px 4px;
+  font-size:15px;
+  flex:1;
+  min-width:0
+}
+form button{
+  border:0;
+  background:#496454;
+  color:white;
+  padding:0 17px;
+  cursor:pointer
+}
+.toolbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin:20px 0 8px
+}
+.toolbar p,.toolbar button,#clear-done{
+  font-size:11px;
+  color:#858d83
+}
+.toolbar button,#clear-done{
+  border:0;
+  background:transparent;
+  padding:7px;
+  cursor:pointer
+}
+.toolbar .active{
+  background:#e9eee8;
+  color:#385344
+}
+ul{
+  list-style:none;
+  margin:0;
+  padding:0
+}
+.task{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  border-bottom:1px solid #edf0eb;
+  padding:13px 4px
+}
+.task input{
+  accent-color:#4d7059;
+  width:16px;
+  height:16px;
+  flex:none
+}
+.task label{
+  flex:1;
+  overflow-wrap:anywhere
+}
+.task.done label{
+  text-decoration:line-through;
+  color:#a3aaa1
+}
+.remove{
+  border:0;
+  background:none;
+  color:#9ca49a;
+  font-size:18px;
+  cursor:pointer
+}
+.empty{
+  text-align:center;
+  padding:25px 0;
+  color:#8a9388;
+  font-size:13px
+}
+.app footer{
+  border-top:1px solid #edf0eb;
+  margin-top:12px;
+  padding-top:14px;
+  display:flex;
+  justify-content:space-between;
+  color:#a0a69e;
+  font-size:10px
+}
+.sr-only{
+  position:absolute;
+  clip:rect(0,0,0,0);
+  width:1px;
+  height:1px;
+  overflow:hidden
+}
+@media(max-width:480px){
+  body{
+    padding:20px 12px
+  }
+  .app{
+    padding:30px 20px
+  }
+  .toolbar{
+    align-items:flex-start;
+    gap:5px;
+    flex-direction:column
+  }
+}
