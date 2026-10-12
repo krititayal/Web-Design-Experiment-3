@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A simple task list saved in your browser.">
+    <title>Small Steps — Task List</title>
+      <link rel="stylesheet" href="style.css">
+      <script src="app.js" defer>
+      </script>
+    </head>
+    <body>
+      <main class="app">
+        <header>
+          <p class="eyebrow">A LITTLE SPACE TO THINK</p>
+            <h1>Small steps<span>.</span>
+            </h1>
+            <p class="sub">One thing at a time is still progress.</p>
+            </header>
+            <form id="task-form">
+              <label class="sr-only" for="task-input">Add a task</label>
+                <input id="task-input" maxlength="120" placeholder="What needs doing?" autocomplete="off" required>
+                <button type="submit">Add ＋</button>
+                </form>
+                <div class="toolbar">
+                  <p id="count">
+                  </p>
+                  <div>
+                    <button data-filter="all" class="active">All</button>
+                      <button data-filter="active">To do</button>
+                        <button data-filter="completed">Done</button>
+                        </div>
+                      </div>
+                      <ul id="task-list" aria-live="polite">
+                      </ul>
+                      <p id="empty" class="empty">Your list is clear. Add a small step above.</p>
+                        <footer>
+                          <span>Saved in this browser</span>
+                            <button id="clear-done" type="button">Clear completed</button>
+                            </footer>
+                          </main>
+                        </body>
+                      </html>
